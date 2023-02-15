@@ -18,40 +18,220 @@ body {
   width: 40%;
 }
 
-.titulo ul {
-  margin: 100px;
-  position: absolute;
+/* titulos */
+.titulocontacto ul {
+  margin-top: 15%;
+  margin-left: 30%;
+  margin-right: 30%;
   justify-content: center;
   display: flex;
 }
 
-.titulo ul li {
+.titulocontacto ul li {
   list-style: none;
-  color: #484848;
+  color: #917354;
   font-size: 80px;
   letter-spacing: 15px;
   animation: iluminar 1.4s linear infinite;
 }
+.titulocontacto ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+.titulocontacto ul li:nth-child(2) {
+  animation-delay: 0.1s;
+}
 
-.titulo2 ul {
-  margin-right: 800%;
-  position: absolute;
+.titulocontacto ul li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.titulocontacto ul li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.titulocontacto ul li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.titulocontacto ul li:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.titulocontacto ul li:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.titulocontacto ul li:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.titulogaleria ul {
+  margin-top: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
   justify-content: center;
-
-  align-items: center;
+  display: flex;
 }
 
-.titulo2 ul li {
+.titulogaleria ul li {
   list-style: none;
-  color: #484848;
+  color: #917354;
   font-size: 80px;
   letter-spacing: 15px;
   animation: iluminar 1.4s linear infinite;
+}
+.titulogaleria ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+.titulogaleria ul li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.titulogaleria ul li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.titulogaleria ul li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.titulogaleria ul li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.titulogaleria ul li:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.titulogaleria ul li:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.tituloreserva ul {
+  margin-top: 15%;
+  margin-left: 30%;
+  margin-right: 70%;
+  justify-content: center;
+  display: flex;
+}
+
+.tituloreserva ul li {
+  list-style: none;
+  color: #917354;
+  font-size: 80px;
+  letter-spacing: 15px;
+  animation: iluminar 1.4s linear infinite;
+}
+.tituloreserva ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+.tituloreserva ul li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.tituloreserva ul li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.tituloreserva ul li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.tituloreserva ul li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.tituloreserva ul li:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.tituloreserva ul li:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.tituloonline ul {
+  margin-top: -3%;
+  margin-left: 60%;
+  margin-right: 30%;
+  justify-content: center;
+  display: flex;
+}
+
+.tituloonline ul li {
+  list-style: none;
+  color: #917354;
+  font-size: 80px;
+  letter-spacing: 15px;
+  animation: iluminar 1.4s linear infinite;
+}
+.tituloonline ul li:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.tituloonline ul li:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.tituloonline ul li:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.tituloonline ul li:nth-child(11) {
+  animation-delay: 0.11s;
+}
+.titulogaleria ul li:nth-child(12) {
+  animation-delay: 0.12s;
+}
+.tituloonline ul li:nth-child(13) {
+  animation-delay: 0.13s;
+}
+
+.tituloquien ul {
+  margin-top: 15%;
+  margin-left: 35%;
+  margin-right: 70%;
+  justify-content: center;
+  display: flex;
+}
+
+.tituloquien ul li {
+  list-style: none;
+  color: #917354;
+  font-size: 80px;
+  letter-spacing: 15px;
+  animation: iluminar 1.4s linear infinite;
+}
+.tituloquien ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+.tituloquien ul li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.tituloquien ul li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.tituloquien ul li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.tituloquien ul li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.titulosoy ul {
+  margin-top: -10.5%;
+  margin-left: 40%;
+  margin-right: 20%;
+  margin-bottom: 20%;
+  justify-content: center;
+  display: flex;
+}
+
+.titulosoy ul li {
+  list-style: none;
+  color: #917354;
+  font-size: 80px;
+  letter-spacing: 15px;
+  animation: iluminar 1.4s linear infinite;
+}
+.titulosoy ul li:nth-child(1) {
+  animation-delay: 0.6s;
+}
+.titulosoy ul li:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.titulosoy ul li:nth-child(3) {
+  animation-delay: 0.8s;
 }
 
 @keyframes iluminar {
   0% {
-    color: #484848;
+    color: #ebb96e;
     text-shadow: none;
   }
   90% {
@@ -62,32 +242,6 @@ body {
     color: #fffefe;
     text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
   }
-}
-
-.titulo ul li:nth-child(1) {
-  animation-delay: 0s;
-}
-.titulo ul li:nth-child(2) {
-  animation-delay: 0.1s;
-}
-
-.titulo ul li:nth-child(3) {
-  animation-delay: 0.2s;
-}
-.titulo ul li:nth-child(4) {
-  animation-delay: 0.3s;
-}
-.titulo ul li:nth-child(5) {
-  animation-delay: 0.4s;
-}
-.titulo ul li:nth-child(6) {
-  animation-delay: 0.5s;
-}
-.titulo ul li:nth-child(7) {
-  animation-delay: 0.6s;
-}
-.titulo ul li:nth-child(8) {
-  animation-delay: 0.7s;
 }
 
 /* footer */
@@ -102,7 +256,6 @@ h1 {
 footer {
   margin: 0%;
   width: 100%;
-  position: fixed;
   bottom: 0%;
   margin-top: auto;
   display: block;
@@ -168,10 +321,45 @@ footer .sociales a {
   font-size: small;
 }
 
+/* Inicio */
+.imgfondo {
+  margin-top: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
+}
+
+h3 {
+  margin-top: 10%;
+  text-align: center;
+  color: #976544;
+  font-family: "Cardo", serif;
+  font-size: 70px;
+}
+h4 {
+  margin-top: 5%;
+  margin-bottom: 20%;
+  text-align: center;
+  color: #976544;
+  font-family: "Cardo", serif;
+  font-size: 45px;
+}
+
+h6 {
+  color: #673c3c;
+  margin-left: 57%;
+  margin-top: -20%;
+  margin-bottom: 10%;
+  font-family: "Cardo", serif;
+  font-size: 23px;
+}
 /* Galeria */
 .cards {
-  margin-top: 20%;
+  margin-top: 5%;
   display: flex;
+  margin-bottom: 10%;
 }
 
 .row {
@@ -308,7 +496,8 @@ form {
   padding: 16px;
   border-radius: 10px;
   margin-left: 40%;
-  margin-top: 20%;
+  margin-top: 5%;
+  margin-bottom: 10%;
   background-color: #b79371;
 }
 
@@ -369,4 +558,45 @@ textarea {
   margin: 8px 0;
   resize: none;
   display: block;
+}
+
+/* Reserva online */
+h2 {
+  text-align: center;
+  font-size: 40px;
+  justify-content: center;
+  color: rgb(176, 163, 163);
+  opacity: 0%;
+  font-family: "Cardo", serif;
+}
+
+.fecha {
+  display: flex;
+  background-color: #5f3f3f;
+  opacity: 60%;
+  width: 400px;
+  height: 200;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-left: 35%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.agenda input {
+  margin: 0 auto;
+  width: 270px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 100px;
+  margin: auto;
+  background-color: #b18a72;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  color: #715a49;
+  margin-bottom: 10%;
+  margin-top: 5%;
 }
