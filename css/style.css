@@ -12,10 +12,18 @@ body {
 
 .navbar {
   background-color: rgb(225, 191, 138);
+  width: 100%;
+  height: 20%;
+}
+.navbar .container {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  width: 40%;
+  width: 33%;
 }
 
 /* titulos */
@@ -323,9 +331,9 @@ footer .sociales a {
 
 /* Inicio */
 .imgfondo {
-  margin-top: 45%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 40%;
+  margin-left: 50%;
+  margin-right: 50%;
   width: 80%;
   height: 80%;
 }
@@ -337,6 +345,7 @@ h3 {
   font-family: "Cardo", serif;
   font-size: 70px;
 }
+
 h4 {
   margin-top: 5%;
   margin-bottom: 20%;
@@ -354,6 +363,36 @@ h6 {
   font-family: "Cardo", serif;
   font-size: 23px;
 }
+
+/* Quien soy */
+.imgRedonda {
+  width: 240px;
+  height: 300px;
+  border-radius: 160px;
+  border: 10px solid rgb(155, 111, 111);
+  background-size: cover;
+  margin-left: 10%;
+  margin-top: -13%;
+  transform: rotate3d(50deg);
+}
+
+.titulohola {
+  margin-top: -25%;
+  margin-left: 50%;
+  font-size: 45px;
+  color: #5f3f3f;
+  font-family: "Cardo", serif;
+}
+
+p {
+  margin-top: 0%;
+  margin-left: 35%;
+  margin-right: 10%;
+  font-size: 18px;
+  color: #5f3f3f;
+  font-family: "Cardo", serif;
+}
+
 /* Galeria */
 .cards {
   margin-top: 5%;
