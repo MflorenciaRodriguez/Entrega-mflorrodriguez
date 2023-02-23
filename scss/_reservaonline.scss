@@ -1,0 +1,100 @@
+/* Reserva online */
+h2 {
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  color: rgb(176, 163, 163);
+  opacity: 0%;
+  font-family: $font-tittle;
+}
+
+.fecha {
+  display: flex;
+  background-color: $tittle-color;
+  opacity: 60%;
+  width: 400px;
+  height: 200;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-left: 35%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.agenda input {
+  margin: 0 auto;
+  width: 270px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 100px;
+  margin: auto;
+  background-color: #b18a72;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  color: #715a49;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+.titulo--reserva {
+  font-size: 30px;
+  color: #917354;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  text-align: center;
+  font-family: $font-tittle;
+}
+
+@media (max-width: 546px) {
+  .fecha {
+    margin-top: 10%;
+    margin-left: 40%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fecha {
+    margin-top: 10%;
+    margin-left: 35%;
+    flex: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .fecha {
+    margin-top: 30%;
+    display: flex;
+    flex: 100%;
+    margin-left: 5%;
+    width: 90%;
+    height: 20%;
+  }
+}
+
+@media (max-width: 546px) {
+  .agenda {
+    margin-top: 10%;
+    margin-left: 40%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .agenda {
+    margin-top: 10%;
+    margin-left: 30%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .agenda {
+    margin-top: 10%;
+    display: flex;
+    flex: 100%;
+    margin-left: 5%;
+  }
+}

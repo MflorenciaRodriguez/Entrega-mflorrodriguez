@@ -3,57 +3,6 @@
   margin: 0px;
 }
 
-body {
-  background-color: rgb(218, 199, 169);
-  font-family: "Lato", sans-serif;
-  min-height: 100vh;
-  height: 100vh;
-}
-
-.navbar {
-  background-color: rgb(225, 191, 138);
-  width: 100%;
-  height: 20%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar .container {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar-collapse {
-  padding: 0;
-  margin: 0;
-}
-
-.logo {
-  width: 35%;
-  max-width: 100%;
-  height: auto;
-  margin-top: -5%;
-}
-
-.navbar-toggler:hover {
-  text-decoration: none;
-}
-.collapse:not(.show) {
-  display: none;
-  background-color: rgb(225, 191, 138);
-}
-
-.navbar-collapse {
-  flex-grow: 1;
-  align-items: center;
-  opacity: 1;
-  background-color: rgb(225, 191, 138);
-}
-
 /* titulos */
 .animate__fadeIn {
   margin-top: 10%;
@@ -71,184 +20,300 @@ body {
     margin-top: 10%;
   }
 }
-
 @media (max-width: 768px) {
   .animate__fadeIn {
     margin-top: 40%;
   }
 }
-
 @media (max-width: 1200px) {
   .animate__fadeIn {
     margin-top: 50%;
   }
 }
-
-/* Inicio */
-.imgfondo {
-  margin-top: 15%;
-  margin-left: 10%;
-  margin-right: 50%;
-  margin-bottom: 50%;
-  width: 80%;
-  height: 80%;
+body {
+  background-color: rgb(218, 199, 169);
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+  height: 100vh;
 }
 
-h3 {
-  margin-top: 10%;
-  text-align: center;
-  margin-bottom: 0%;
-  color: #976544;
-  font-family: "Cardo", serif;
-  font-size: 40px;
-}
-
-h4 {
+/* formulario contacto */
+form {
+  width: 350px;
+  padding: 16px;
+  border-radius: 10px;
+  margin-left: 37%;
   margin-top: 5%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
+  background-color: #b79371;
+}
+form label {
+  width: 72px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+form input[type=text],
+form input[type=email] {
+  width: 230px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form input[type=submit] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #4e4b4b;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #673c3c;
+}
+
+form input[type=submit]:hover {
+  background-color: rgb(145, 116, 116);
   text-align: center;
-  color: #976544;
-  font-family: "Cardo", serif;
-  font-size: 30px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
 }
 
-h6 {
-  color: #673c3c;
-  margin-left: 57%;
-  margin-top: -20%;
-  margin-bottom: 10%;
-  font-family: "Cardo", serif;
-  font-size: 15px;
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    font-size: 100%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  resize: none;
+  display: block;
 }
 
 @media (max-width: 546px) {
-  .imgfondo {
+  .contacto {
     margin-top: 10%;
-    width: 40%;
-    height: 50%;
+    margin-left: 30%;
     flex: 100%;
   }
 }
-
 @media (max-width: 768px) {
-  .imgfondo {
-    margin-top: 40%;
-    flex: 100%;
-    width: 55%;
-    height: 40%;
-  }
-}
-@media (max-width: 1200px) {
-  .imgfondo {
-    margin-top: 50%;
-    flex: 100%;
-    width: 85%;
-    margin-left: 7%;
-    height: 90%;
-  }
-}
-/* Quien soy */
-.imgRedonda {
-  width: 240px;
-  height: 300px;
-  border-radius: 160px;
-  border: 10px solid #5f3f3f;
-  background-size: cover;
-  margin-left: 10%;
-  margin-bottom: 20%;
-  transform: rotate3d(50deg);
-}
-
-.titulohola {
-  margin-top: -43%;
-  margin-left: 30%;
-  margin-right: 0%;
-  margin-bottom: 2%;
-  font-size: 27px;
-  color: #5f3f3f;
-  font-family: "Cardo", serif;
-}
-
-p {
-  margin-top: 0%;
-  margin-left: 30%;
-  margin-right: 10%;
-  margin-bottom: 10%;
-  font-size: 20px;
-  color: #5f3f3f;
-  font-family: "Cardo", serif;
-}
-
-@media (max-width: 546px) {
-  .imgRedonda {
+  .contacto {
     margin-top: 10%;
-    width: 40%;
-    height: 50%;
     flex: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .imgRedonda {
-    margin-top: 40%;
-    flex: 100%;
-    width: 55%;
-    height: 40%;
   }
 }
 @media (max-width: 1000px) {
-  .imgRedonda {
+  .contacto {
+    margin-top: 10%;
+    display: flex;
+    flex: 100%;
+    margin-left: -15%;
+    width: 90%;
+    height: 20%;
+  }
+}
+/* Reserva online */
+h2 {
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  color: rgb(176, 163, 163);
+  opacity: 0%;
+  font-family: "Cardo", serif;
+}
+
+.fecha {
+  display: flex;
+  background-color: #5f3f3f;
+  opacity: 60%;
+  width: 400px;
+  height: 200;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-left: 35%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.agenda input {
+  margin: 0 auto;
+  width: 270px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 100px;
+  margin: auto;
+  background-color: #b18a72;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  color: #715a49;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+.titulo--reserva {
+  font-size: 30px;
+  color: #917354;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  text-align: center;
+  font-family: "Cardo", serif;
+}
+
+@media (max-width: 546px) {
+  .fecha {
+    margin-top: 10%;
+    margin-left: 40%;
+    flex: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .fecha {
+    margin-top: 10%;
+    margin-left: 35%;
+    flex: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .fecha {
     margin-top: 30%;
     display: flex;
     flex: 100%;
-    margin-right: 10%;
-    margin-left: 22%;
+    margin-left: 5%;
+    width: 90%;
+    height: 20%;
   }
+}
+@media (max-width: 546px) {
+  .agenda {
+    margin-top: 10%;
+    margin-left: 40%;
+    flex: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .agenda {
+    margin-top: 10%;
+    margin-left: 30%;
+    flex: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .agenda {
+    margin-top: 10%;
+    display: flex;
+    flex: 100%;
+    margin-left: 5%;
+  }
+}
+/* footer */
+h1 {
+  text-align: center;
+  color: rgb(147, 113, 78);
+  font-size: x-large;
+  justify-content: end;
+  font-family: "Cardo", serif;
+}
+
+footer {
+  margin: 0%;
+  width: 100%;
+  bottom: 0%;
+  margin-top: auto;
+  display: block;
+  padding-top: 1rem;
+}
+footer .sociales {
+  background-color: rgb(225, 191, 138);
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 8px;
+  text-align: center;
+}
+footer .sociales a {
+  font-size: 20px;
+  color: rgb(86, 84, 99);
+  transition: all;
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(1.3, 1.3);
+}
+
+.fa-facebook:hover {
+  transform: scale(1.5, 1.5);
+  color: rgb(67, 44, 241);
+  text-align: center;
+}
+
+.fa-instagram:hover {
+  transform: scale 1.5, 1.5;
+  color: rgb(199, 14, 128);
+  text-align: center;
+}
+
+.fa-whatsapp:hover {
+  transform: scale(1.5, 1.5);
+  color: rgb(47, 215, 50);
+  text-align: center;
+}
+
+.seguinos {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: rgb(255, 255, 255);
+  font-size: small;
 }
 
 @media (max-width: 546px) {
-  .titulohola {
-    font-size: 30px;
-    margin-top: 10%;
-    margin-left: 5%;
+  .footer {
+    width: 40%;
   }
 }
-
 @media (max-width: 768px) {
-  .titulohola {
-    font-size: 35px;
-    margin-top: 20%;
-    margin-left: 5%;
+  .footer {
+    width: 30%;
   }
 }
 @media (max-width: 1000px) {
-  .titulohola {
-    font-size: 25px;
+  .footer {
+    width: 10%;
   }
 }
-
-@media (max-width: 400px) {
-  .p {
-    font-size: 15px;
-    margin-left: 10%;
-    margin-right: 30%;
-  }
-}
-
-@media (max-width: 768px) {
-  .p {
-    font-size: 35px;
-    margin-top: 20%;
-    margin-left: 5%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .p {
-    font-size: 15px;
-  }
-}
-
 /* Galeria */
 .cards {
   margin-top: 5%;
@@ -264,7 +329,7 @@ p {
 }
 
 .image {
-  background: (202, 197, 197);
+  background: 202, 197, 197;
   position: relative;
   flex: 1;
   max-width: 460px;
@@ -373,12 +438,10 @@ p {
     max-width: 200px;
   }
 }
-
 @media (max-width: 400px) {
   .image .details p {
     font-size: 10;
   }
-
   .more .read-more,
   .more {
     font-size: 13px;
@@ -399,14 +462,13 @@ p {
     font-size: 30px;
   }
 }
-
 .gallery {
   display: grid;
   margin-top: 5%;
   margin-bottom: 10%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* grid-template-columns: repeat(auto-fit, minmax(min(100%,300px), 1fr));
-    grid-auto-rows: auto;*/
+      grid-auto-rows: auto;*/
   grid-gap: 20px;
 }
 
@@ -415,6 +477,235 @@ p {
   border-radius: 15px;
 }
 
+/* Inicio */
+.imgfondo {
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 50%;
+  margin-bottom: 50%;
+  width: 80%;
+  height: 80%;
+}
+
+h3 {
+  margin-top: 10%;
+  text-align: center;
+  margin-bottom: 0%;
+  color: #976544;
+  font-family: "Cardo", serif;
+  font-size: 40px;
+}
+
+h4 {
+  margin-top: 5%;
+  margin-bottom: 20%;
+  text-align: center;
+  color: #976544;
+  font-family: "Cardo", serif;
+  font-size: 30px;
+}
+
+h6 {
+  color: #673c3c;
+  margin-left: 57%;
+  margin-top: -20%;
+  margin-bottom: 10%;
+  font-family: "Cardo", serif;
+  font-size: 15px;
+}
+
+@media (max-width: 546px) {
+  .imgfondo {
+    margin-top: 10%;
+    width: 40%;
+    height: 50%;
+    flex: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .imgfondo {
+    margin-top: 40%;
+    flex: 100%;
+    width: 55%;
+    height: 40%;
+  }
+}
+@media (max-width: 1200px) {
+  .imgfondo {
+    margin-top: 50%;
+    flex: 100%;
+    width: 85%;
+    margin-left: 7%;
+    height: 90%;
+  }
+}
+.navbar {
+  background-color: rgb(225, 191, 138);
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .container {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-collapse {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  width: 35%;
+  max-width: 100%;
+  height: auto;
+  margin-top: -5%;
+}
+
+.navbar-toggler:hover {
+  text-decoration: none;
+}
+
+.collapse:not(.show) {
+  display: none;
+  background-color: rgb(225, 191, 138);
+}
+
+.navbar-collapse {
+  flex-grow: 1;
+  align-items: center;
+  opacity: 1;
+  background-color: rgb(225, 191, 138);
+}
+
+/* titulos */
+.animate__fadeIn {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(133, 91, 66);
+  font-family: "Righteous", cursive;
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s;
+}
+
+@media (max-width: 546px) {
+  .animate__fadeIn {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .animate__fadeIn {
+    margin-top: 40%;
+  }
+}
+@media (max-width: 1200px) {
+  .animate__fadeIn {
+    margin-top: 50%;
+  }
+}
+/* Quien soy */
+.imgRedonda {
+  width: 240px;
+  height: 300px;
+  border-radius: 160px;
+  border: 10px solid #5f3f3f;
+  background-size: cover;
+  margin-left: 10%;
+  margin-bottom: 20%;
+  transform: rotate3d(50deg);
+}
+
+.titulohola {
+  margin-top: -43%;
+  margin-left: 30%;
+  margin-right: 0%;
+  margin-bottom: 2%;
+  font-size: 27px;
+  color: #5f3f3f;
+  font-family: "Cardo", serif;
+}
+
+p {
+  margin-top: 0%;
+  margin-left: 30%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  font-size: 20px;
+  color: #5f3f3f;
+  font-family: "Cardo", serif;
+}
+
+@media (max-width: 546px) {
+  .imgRedonda {
+    margin-top: 10%;
+    width: 40%;
+    height: 50%;
+    flex: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .imgRedonda {
+    margin-top: 40%;
+    flex: 100%;
+    width: 55%;
+    height: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  .imgRedonda {
+    margin-top: 30%;
+    display: flex;
+    flex: 100%;
+    margin-right: 10%;
+    margin-left: 22%;
+  }
+}
+@media (max-width: 546px) {
+  .titulohola {
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .titulohola {
+    font-size: 35px;
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 1000px) {
+  .titulohola {
+    font-size: 25px;
+  }
+}
+@media (max-width: 400px) {
+  .p {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .p {
+    font-size: 35px;
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 1200px) {
+  .p {
+    font-size: 15px;
+  }
+}
 /* Reserva online */
 h2 {
   text-align: center;
@@ -472,7 +763,6 @@ h2 {
     flex: 100%;
   }
 }
-
 @media (max-width: 768px) {
   .fecha {
     margin-top: 10%;
@@ -490,7 +780,6 @@ h2 {
     height: 20%;
   }
 }
-
 @media (max-width: 546px) {
   .agenda {
     margin-top: 10%;
@@ -498,7 +787,6 @@ h2 {
     flex: 100%;
   }
 }
-
 @media (max-width: 768px) {
   .agenda {
     margin-top: 10%;
@@ -506,7 +794,6 @@ h2 {
     flex: 100%;
   }
 }
-
 @media (max-width: 1200px) {
   .agenda {
     margin-top: 10%;
@@ -516,96 +803,4 @@ h2 {
   }
 }
 
-/* footer */
-h1 {
-  text-align: center;
-  color: rgb(147, 113, 78);
-  font-size: x-large;
-  justify-content: end;
-  font-family: "Cardo", serif;
-}
-
-footer {
-  margin: 0%;
-  width: 100%;
-  bottom: 0%;
-  margin-top: auto;
-  display: block;
-  padding-top: 1rem;
-}
-
-.footer .sociales {
-  background-color: rgb(225, 191, 138);
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px 8px;
-  text-align: center;
-}
-.footer .sociales .a {
-  font-size: 20px;
-  color: rgb(86, 84, 99);
-  transition: all;
-  text-align: center;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 10px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.7;
-  transform: scale(1.3, 1.3);
-}
-
-.fa-facebook:hover {
-  transform: scale(1.5, 1.5);
-  color: rgb(67, 44, 241);
-  text-align: center;
-}
-
-.fa-instagram:hover {
-  transform: scale (1.5, 1.5);
-  color: rgb(199, 14, 128);
-  text-align: center;
-}
-
-.fa-whatsapp:hover {
-  transform: scale(1.5, 1.5);
-  color: rgb(47, 215, 50);
-  text-align: center;
-}
-
-.seguinos {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  color: rgb(255, 255, 255);
-  font-size: small;
-}
-
-@media (max-width: 546px) {
-  .footer {
-    width: 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    width: 30%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .footer {
-    width: 10%;
-  }
-}
+/*# sourceMappingURL=style.css.map */

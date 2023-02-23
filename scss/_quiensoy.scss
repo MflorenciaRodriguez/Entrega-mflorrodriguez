@@ -1,0 +1,101 @@
+/* Quien soy */
+.imgRedonda {
+  width: 240px;
+  height: 300px;
+  border-radius: 160px;
+  border: 10px solid $tittle-color;
+  background-size: cover;
+  margin-left: 10%;
+  margin-bottom: 20%;
+  transform: rotate3d(50deg);
+}
+
+.titulohola {
+  margin-top: -43%;
+  margin-left: 30%;
+  margin-right: 0%;
+  margin-bottom: 2%;
+  font-size: 27px;
+  color: $tittle-color;
+  font-family: $font-tittle;
+}
+
+p {
+  margin-top: 0%;
+  margin-left: 30%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  font-size: 20px;
+  color: $tittle-color;
+  font-family: $font-tittle;
+}
+
+@media (max-width: 546px) {
+  .imgRedonda {
+    margin-top: 10%;
+    width: 40%;
+    height: 50%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgRedonda {
+    margin-top: 40%;
+    flex: 100%;
+    width: 55%;
+    height: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  .imgRedonda {
+    margin-top: 30%;
+    display: flex;
+    flex: 100%;
+    margin-right: 10%;
+    margin-left: 22%;
+  }
+}
+
+@media (max-width: 546px) {
+  .titulohola {
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulohola {
+    font-size: 35px;
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 1000px) {
+  .titulohola {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .p {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .p {
+    font-size: 35px;
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .p {
+    font-size: 15px;
+  }
+}

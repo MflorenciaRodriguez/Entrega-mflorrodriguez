@@ -1,0 +1,192 @@
+/* formulario contacto */
+form {
+  width: 350px;
+  padding: 16px;
+  border-radius: 10px;
+  margin-left: 37%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background-color: #b79371;
+  label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+  }
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 230px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #4e4b4b;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #673c3c;
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(145, 116, 116);
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    font-size: 100%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  resize: none;
+  display: block;
+}
+@media (max-width: 546px) {
+  .contacto {
+    margin-top: 10%;
+    margin-left: 30%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto {
+    margin-top: 10%;
+    flex: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .contacto {
+    margin-top: 10%;
+    display: flex;
+    flex: 100%;
+    margin-left: -15%;
+    width: 90%;
+    height: 20%;
+  }
+}
+/* Reserva online */
+h2 {
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  color: rgb(176, 163, 163);
+  opacity: 0%;
+  font-family: "Cardo", serif;
+}
+
+.fecha {
+  display: flex;
+  background-color: #5f3f3f;
+  opacity: 60%;
+  width: 400px;
+  height: 200;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-left: 35%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.agenda input {
+  margin: 0 auto;
+  width: 270px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 100px;
+  margin: auto;
+  background-color: #b18a72;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  color: #715a49;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+.titulo--reserva {
+  font-size: 30px;
+  color: #917354;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  text-align: center;
+  font-family: "Cardo", serif;
+}
+
+@media (max-width: 546px) {
+  .fecha {
+    margin-top: 10%;
+    margin-left: 40%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fecha {
+    margin-top: 10%;
+    margin-left: 35%;
+    flex: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .fecha {
+    margin-top: 30%;
+    display: flex;
+    flex: 100%;
+    margin-left: 5%;
+    width: 90%;
+    height: 20%;
+  }
+}
+
+@media (max-width: 546px) {
+  .agenda {
+    margin-top: 10%;
+    margin-left: 40%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .agenda {
+    margin-top: 10%;
+    margin-left: 30%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .agenda {
+    margin-top: 10%;
+    display: flex;
+    flex: 100%;
+    margin-left: 5%;
+  }
+}
