@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(218, 199, 169);
+  background-color: $base-color;
   font-family: "Lato", sans-serif;
   min-height: 100vh;
   height: 100vh;
@@ -55,14 +55,13 @@ body {
 }
 
 /* titulos */
-
 .animate__fadeIn {
   margin-top: 10%;
   margin-bottom: 5%;
   text-align: center;
   font-size: 50px;
-  color: rgb(133, 91, 66);
-  font-family: "Righteous", cursive;
+  color: $color-tittle;
+  font-family: $font-tittle;
   animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 5s;
 }
@@ -82,101 +81,6 @@ body {
 @media (max-width: 1200px) {
   .animate__fadeIn {
     margin-top: 50%;
-  }
-}
-
-/* footer */
-h1 {
-  text-align: center;
-  color: rgb(147, 113, 78);
-  font-size: x-large;
-  justify-content: end;
-  font-family: "Cardo", serif;
-}
-
-footer {
-  margin: 0%;
-  width: 100%;
-  bottom: 0%;
-  margin-top: auto;
-  display: block;
-  padding-top: 1rem;
-}
-
-footer .sociales {
-  background-color: rgb(225, 191, 138);
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px 8px;
-  text-align: center;
-}
-
-footer .sociales a {
-  font-size: 20px;
-  color: rgb(86, 84, 99);
-  transition: all;
-  text-align: center;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 10px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.7;
-  transform: scale(1.3, 1.3);
-}
-
-.fa-facebook:hover {
-  transform: scale(1.5, 1.5);
-  color: rgb(67, 44, 241);
-  text-align: center;
-}
-
-.fa-instagram:hover {
-  transform: scale (1.5, 1.5);
-  color: rgb(199, 14, 128);
-  text-align: center;
-}
-
-.fa-whatsapp:hover {
-  transform: scale(1.5, 1.5);
-  color: rgb(47, 215, 50);
-  text-align: center;
-}
-
-.seguinos {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  color: rgb(255, 255, 255);
-  font-size: small;
-}
-
-@media (max-width: 546px) {
-  .footer {
-    width: 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    width: 30%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .footer {
-    width: 10%;
   }
 }
 
@@ -243,13 +147,12 @@ h6 {
     height: 90%;
   }
 }
-
 /* Quien soy */
 .imgRedonda {
   width: 240px;
   height: 300px;
   border-radius: 160px;
-  border: 10px solid rgb(155, 111, 111);
+  border: 10px solid $color-font;
   background-size: cover;
   margin-left: 10%;
   margin-bottom: 20%;
@@ -262,8 +165,8 @@ h6 {
   margin-right: 0%;
   margin-bottom: 2%;
   font-size: 27px;
-  color: #5f3f3f;
-  font-family: "Cardo", serif;
+  color: $color-font;
+  font-family: $primary-font;
 }
 
 p {
@@ -272,8 +175,8 @@ p {
   margin-right: 10%;
   margin-bottom: 10%;
   font-size: 20px;
-  color: #5f3f3f;
-  font-family: "Cardo", serif;
+  color: $color-font;
+  font-family: $primary-font;
 }
 
 @media (max-width: 546px) {
@@ -503,7 +406,7 @@ p {
   margin-bottom: 10%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   /* grid-template-columns: repeat(auto-fit, minmax(min(100%,300px), 1fr));
-  grid-auto-rows: auto;*/
+    grid-auto-rows: auto;*/
   grid-gap: 20px;
 }
 
@@ -511,101 +414,6 @@ p {
   width: 100%;
   border-radius: 15px;
 }
-
-/* formulario contacto */
-form {
-  width: 350px;
-  padding: 16px;
-  border-radius: 10px;
-  margin-left: 37%;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  background-color: #b79371;
-}
-
-form label {
-  width: 72px;
-  font-weight: bold;
-  display: inline-block;
-}
-
-form input[type="text"],
-form input[type="email"] {
-  width: 230px;
-  padding: 3px 10px;
-  border: 1px solid #f6f6f6;
-  border-radius: 3px;
-  background-color: #f6f6f6;
-  margin: 8px 0;
-  display: inline-block;
-}
-
-form input[type="submit"] {
-  width: 100%;
-  padding: 8px 16px;
-  margin-top: 32px;
-  border: 1px solid #4e4b4b;
-  border-radius: 5px;
-  display: block;
-  color: #fff;
-  background-color: #673c3c;
-}
-
-form input[type="submit"]:hover {
-  background-color: rgb(145, 116, 116);
-  text-align: center;
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite;
-}
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    font-size: 100%;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-textarea {
-  width: 100%;
-  height: 100px;
-  border: 1px solid #f6f6f6;
-  border-radius: 3px;
-  background-color: #f6f6f6;
-  margin: 8px 0;
-  resize: none;
-  display: block;
-}
-@media (max-width: 546px) {
-  .contacto {
-    margin-top: 10%;
-    margin-left: 30%;
-    flex: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .contacto {
-    margin-top: 10%;
-    flex: 100%;
-  }
-}
-@media (max-width: 1000px) {
-  .contacto {
-    margin-top: 10%;
-    display: flex;
-    flex: 100%;
-    margin-left: -15%;
-    width: 90%;
-    height: 20%;
-  }
-}
-
 /* Reserva online */
 h2 {
   text-align: center;
@@ -704,5 +512,98 @@ h2 {
     display: flex;
     flex: 100%;
     margin-left: 5%;
+  }
+}
+
+/* footer */
+h1 {
+  text-align: center;
+  color: rgb(147, 113, 78);
+  font-size: x-large;
+  justify-content: end;
+  font-family: "Cardo", serif;
+}
+
+footer {
+  margin: 0%;
+  width: 100%;
+  bottom: 0%;
+  margin-top: auto;
+  display: block;
+  padding-top: 1rem;
+  .sociales {
+    background-color: rgb(225, 191, 138);
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 8px;
+    text-align: center;
+    a {
+      font-size: 20px;
+      color: rgb(86, 84, 99);
+      transition: all;
+      text-align: center;
+    }
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(1.3, 1.3);
+}
+
+.fa-facebook:hover {
+  transform: scale(1.5, 1.5);
+  color: rgb(67, 44, 241);
+  text-align: center;
+}
+
+.fa-instagram:hover {
+  transform: scale (1.5, 1.5);
+  color: rgb(199, 14, 128);
+  text-align: center;
+}
+
+.fa-whatsapp:hover {
+  transform: scale(1.5, 1.5);
+  color: rgb(47, 215, 50);
+  text-align: center;
+}
+
+.seguinos {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: rgb(255, 255, 255);
+  font-size: small;
+}
+
+@media (max-width: 546px) {
+  .footer {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    width: 10%;
   }
 }
