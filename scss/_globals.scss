@@ -11,24 +11,24 @@
   font-size: 50px;
   color: rgb(133, 91, 66);
   font-family: "Righteous", cursive;
-  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation: fadeIn;
   animation-duration: 5s;
 }
 
 @media (max-width: 546px) {
   .animate__fadeIn {
-    margin-top: 10%;
+    margin-top: 30%;
   }
 }
 
 @media (max-width: 768px) {
   .animate__fadeIn {
-    margin-top: 40%;
+    margin-top: 60%;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .animate__fadeIn {
-    margin-top: 50%;
+    margin-top: 80%;
   }
 }

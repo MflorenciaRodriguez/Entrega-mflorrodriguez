@@ -26,6 +26,7 @@ p {
   margin-right: 10%;
   margin-bottom: 10%;
   font-size: 20px;
+  white-space: inherit;
   color: $tittle-color;
   font-family: $font-tittle;
 }
@@ -67,7 +68,7 @@ p {
 
 @media (max-width: 768px) {
   .titulohola {
-    font-size: 35px;
+    font-size: 10px;
     margin-top: 20%;
     margin-left: 5%;
   }
@@ -80,9 +81,10 @@ p {
 
 @media (max-width: 400px) {
   .p {
-    font-size: 15px;
+    font-size: 45px;
     margin-left: 10%;
     margin-right: 30%;
+    white-space: normal;
   }
 }
 
@@ -91,11 +93,15 @@ p {
     font-size: 35px;
     margin-top: 20%;
     margin-left: 5%;
+    white-space: inherit;
   }
 }
 
 @media (max-width: 1200px) {
   .p {
     font-size: 15px;
+    white-space: inherit;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }

@@ -3,10 +3,8 @@ form {
   width: 350px;
   padding: 16px;
   border-radius: 10px;
-  margin-left: 37%;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  background-color: #b79371;
+  margin-left: 55%;
+  background-color: rgb(212, 163, 115);
   label {
     width: 72px;
     font-weight: bold;
@@ -66,6 +64,7 @@ textarea {
   resize: none;
   display: block;
 }
+
 @media (max-width: 546px) {
   .contacto {
     margin-top: 10%;
@@ -80,113 +79,188 @@ textarea {
     flex: 100%;
   }
 }
+
 @media (max-width: 1000px) {
   .contacto {
     margin-top: 10%;
     display: flex;
     flex: 100%;
-    margin-left: -15%;
-    width: 90%;
-    height: 20%;
+    margin-right: 85%;
+    margin-left: 18%;
+    margin-bottom: 10%;
   }
 }
-/* Reserva online */
-h2 {
-  text-align: center;
-  font-size: 30px;
-  justify-content: center;
-  color: rgb(176, 163, 163);
-  opacity: 0%;
-  font-family: "Cardo", serif;
-}
 
-.fecha {
-  display: flex;
-  background-color: #5f3f3f;
-  opacity: 60%;
-  width: 400px;
-  height: 200;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 10%;
-  margin-left: 35%;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.agenda input {
-  margin: 0 auto;
-  width: 270px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 100px;
-  margin: auto;
-  background-color: #b18a72;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  color: #715a49;
+.container-contacto {
   margin-bottom: 10%;
+  margin-top: -35%;
+  margin-inline: 5%;
+}
+
+.titulo-hablamos {
+  font-size: 50px;
+  margin-left: 15%;
+  margin-top: 6%;
+  color: #673c3c;
+  font-family: "Dancing Script", cursive;
+}
+
+.texto-contacto {
+  font-size: 20px;
   margin-top: 5%;
+  margin-bottom: 25%;
+  white-space: inherit;
+  margin-right: 50%;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(156, 102, 68);
 }
 
-.titulo--reserva {
-  font-size: 30px;
-  color: #917354;
-  margin-bottom: 10%;
-  margin-top: 10%;
+.mapa {
+  margin-left: 5%;
+}
+
+.pregunta-ubicacion {
+  font-size: 35px;
+  font-family: "Dancing Script", cursive;
+  color: #673c3c;
+  white-space: normal;
+  margin-left: 52%;
   text-align: center;
-  font-family: "Cardo", serif;
+  margin-top: -30%;
+  margin-bottom: 2%;
+}
+
+.dato-direccion {
+  font-size: 17px;
+  font-family: "Quicksand", sans-serif;
+  color: rgb(156, 102, 68);
+  white-space: normal;
+  margin-left: 52%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.pregunta-telefono {
+  font-size: 35px;
+  font-family: "Dancing Script", cursive;
+  margin-left: 52%;
+  text-align: center;
+  margin-top: 2%;
+  color: #673c3c;
+  white-space: pre-line;
+}
+
+.dato-celular {
+  font-size: 17px;
+  font-family: $font-tittle;
+  margin-left: 52%;
+  text-align: center;
+  margin-top: 2%;
+  color: rgb(156, 102, 68);
+  white-space: pre-line;
+  margin-bottom: 20%;
+  font-family: "Quicksand", sans-serif;
 }
 
 @media (max-width: 546px) {
-  .fecha {
-    margin-top: 10%;
-    margin-left: 40%;
-    flex: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .fecha {
-    margin-top: 10%;
-    margin-left: 35%;
-    flex: 100%;
-  }
-}
-@media (max-width: 1000px) {
-  .fecha {
-    margin-top: 30%;
-    display: flex;
-    flex: 100%;
-    margin-left: 5%;
-    width: 90%;
-    height: 20%;
-  }
-}
-
-@media (max-width: 546px) {
-  .agenda {
-    margin-top: 10%;
-    margin-left: 40%;
-    flex: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .agenda {
+  .titulo-hablamos {
     margin-top: 10%;
     margin-left: 30%;
     flex: 100%;
   }
 }
 
-@media (max-width: 1200px) {
-  .agenda {
+@media (max-width: 768px) {
+  .titulo-hablamos {
+    margin-top: 10%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .titulo-hablamos {
+    font-size: 30px;
+    display: flex;
+    margin-top: 45%;
+    flex: 100%;
+    margin-right: 40%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .texto-contacto {
+    margin-top: 5%;
+    font-size: 15px;
+    margin-right: 40%;
+    margin-inline: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mapa {
     margin-top: 10%;
     display: flex;
     flex: 100%;
-    margin-left: 5%;
+    margin-right: 10%;
+    width: 35%;
+    height: 35%;
+  }
+}
+
+@media (max-width: 546px) {
+  .pregunta-ubicacion {
+    margin-top: 10%;
+    margin-left: 30%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pregunta-ubicacion {
+    margin-top: 10%;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pregunta-ubicacion {
+    margin-top: 10%;
+    margin-left: 22%;
+    margin-right: 10%;
+    display: flex;
+    flex: 100%;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dato-direccion {
+    margin-top: 5%;
+    margin-left: 9%;
+    font-size: 15px;
+    white-space: pre-line;
+    display: flex;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pregunta-telefono {
+    margin-top: 10%;
+    margin-left: 22%;
+    margin-right: 10%;
+    font-size: 30px;
+    display: flex;
+    flex: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dato-celular {
+    margin-top: 5%;
+    margin-left: 9%;
+    font-size: 15px;
+    display: flex;
+    flex: 100%;
   }
 }
